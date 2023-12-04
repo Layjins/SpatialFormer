@@ -2,6 +2,7 @@
 This is an official implementation in PyTorch of SpatialFormer, which is accepted by AAAI-2023.
 
 The full code will be released soon.
+This code is based on the implementations of [**tSF: Transformer-based Semantic Filter for Few-Shot Learning**](https://github.com/Layjins/FewShotLearning-tSF).
 
 <p align="center">
   <img src="doc/motivation.png" width="100%"/></a>
