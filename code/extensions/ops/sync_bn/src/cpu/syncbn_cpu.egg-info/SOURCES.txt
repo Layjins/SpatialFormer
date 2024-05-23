@@ -1,0 +1,7 @@
+operator.cpp
+setup.py
+syncbn_cpu.cpp
+syncbn_cpu.egg-info/PKG-INFO
+syncbn_cpu.egg-info/SOURCES.txt
+syncbn_cpu.egg-info/dependency_links.txt
+syncbn_cpu.egg-info/top_level.txt

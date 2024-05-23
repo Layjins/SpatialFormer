@@ -1,8 +1,6 @@
 # SpatialFormer: Semantic and Target Aware Attentions for Few-Shot Learning
 This is an official implementation in PyTorch of SpatialFormer, which is accepted by AAAI-2023.
 
-The full code will be released soon.
-This code is based on the implementations of [**tSF: Transformer-based Semantic Filter for Few-Shot Learning**](https://github.com/Layjins/FewShotLearning-tSF).
 
 <p align="center">
   <img src="doc/motivation.png" width="100%"/></a>
@@ -25,6 +23,49 @@ Recent Few-Shot Learning (FSL) methods put emphasis on generating a discriminati
 <p align="center">
   <img src="doc/visual.png" width="100%"/></a>
 </p>
+
+
+## Repository Overview
+The repository is structured as follows:
+- args_mini.py/args_tiered.py: Training-related configuration files.
+- test_mini_args.py/test_tiered_args.py: Testing-related configuration files.
+- train.py: Start training file.
+- test.py: Start testing file.
+- torchFewShot/: implementation source code.
+- doc/: Related documentation.
+
+
+## Requirements
+- Torch >= 1.6.0
+- Torchvision >= 0.7.0
+- Python == 3.6
+
+
+## Datasets
+Refer to https://github.com/blue-blue272/fewshot-CAN.
+<!-- ### mini-Imagenet
+For mini-Imagenet experiments, please download mini-Imagenet and put it in ./miniImagenet/data/miniImagenet
+and run proc_image.py to preprocess generate train/val/test datasets. (This process method is based on maml).
+
+### tiered-Imagenet
+For tiered-Imagenet experiments, please download tiered-Imagenet and put it in ./tieredImagenet/data/
+tiered-Imagenet: https://drive.google.com/open?id=1g1aIDy2Ar_MViF2gDXFYDBTR-HYecV07
+https://github.com/renmengye/few-shot-ssl-public
+
+```
+mkdir -p tieredImagenet/data/tieredImagenet/data
+tar -xvf tiered-imagenet.tar
+mv *.pkl tieredImagenet/data/tieredImagenet/data
+``` -->
+
+## Training
+python3 -m torch.distributed.launch --nproc_per_node=4 train.py
+
+## Testing
+python3 -m torch.distributed.launch --nproc_per_node=2 test.py
+
+## Inference
+python3 inference_classifier.py
 
 
 ## Citation
