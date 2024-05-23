@@ -1,6 +1,16 @@
 # SpatialFormer: Semantic and Target Aware Attentions for Few-Shot Learning
 This is an official implementation in PyTorch of SpatialFormer, which is accepted by AAAI-2023.
 
+This code cantains implementations of 4 methods, including SpatialFormer, CECNet, tSF, and AMTNet.
+
+(1) SpatialFormer: Semantic and Target Aware Attentions for Few-Shot Learning. AAAI 2023.
+
+(2) CECNet: Clustered-patch Element Connection for Few-shot Learning. IJCAI 2023.
+
+(3) tSF: Transformer-based Semantic Filter for Few-Shot Learning. ECCV 2022.
+
+(4) AMTNet: Rethinking the Metric in Few-shot Learning: From an Adaptive Multi-Distance Perspective. ACMMM 2022.
+
 
 <p align="center">
   <img src="doc/motivation.png" width="100%"/></a>
